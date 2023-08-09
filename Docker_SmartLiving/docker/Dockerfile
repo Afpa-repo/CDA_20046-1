@@ -17,7 +17,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 COPY ./SmartLiving/composer.json .
 COPY ./SmartLiving/composer.lock .
 
-RUN composer install
+#RUN composer install
 
 #CMD  php bin/console make:migration --no-debug -n && php bin/console doctrine:migrations:migrate -n --allow-no-migration && php bin/console doctrine:fixtures:load -n && php-fpm
 
